@@ -1,10 +1,133 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<html>
+    <head>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <style>
+        .btn-outline-secondary {
+          color: forestgreen;
+          font-weight: bold;
+        }
+        .btn-primary {
+          font-weight: bold;
+        }
+      </style>
+        
+    </head>
+    <body>
+        <!-- NavBar -->
+        <!-- Your code here... -->
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Flight</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Hotel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Transportation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Activity</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Hero -->
+        <!-- Your code here... -->
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 class="display-4 fw-bold">Make your own trip!</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4"> Let us help you design the vacation of your dream..</p><br>Select the theme of your vacation, budget and mode of travel. <br>
+            Choose the best tailored vacation just made for you</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Sign in</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-3">Sign up</button>
+              </div>
+            </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+              <div class="container px-5">
+                <img src="./Tropical.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="900" height="800" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+        <!-- Features -->
+        <!-- Your code here... -->
+        <div class="container px-4 py-5" id="">
+            <h2 class="pb-2 border-bottom">Vacation Themes</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+                </div>
+                <div>
+                  <h2>Romantic</h2>
+                  <p>Celebrate your togetherness or reconnect over a spontaneous long weekend getaway. Pick from one of our romantic packages and wait for creating memories with your love.</p>
+                  <a href="#" class="btn btn-primary">
+                    Romantic Packages
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+                </div>
+                <div>
+                  <h2>Family </h2>
+                  <p>Some quality times with your family is a must for your loved ones. Create laughter and unforgettable moment with your family is all you need to do once you choose our family package.</p>
+                  <a href="#" class="btn btn-primary">
+                    Family Packages
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+                </div>
+                <div>
+                  <h2>Adventure</h2>
+                  <p> Escape everyday sceneries and see the world because travel and adventure is in our DNA. Breathtaking tours for solo and for friends await you with exciting itinerary </p>
+                  <a href="#" class="btn btn-primary">
+                    Adventure Packages
+                  </a>
+              </div>
+            </div>
+          </div>
+              
+          
+
+        <!-- Footer -->
+        <!-- Your code here... -->
+          <div class="container">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+              </ul>
+              <p class="text-center text-muted">© 2022 Company, Inc</p>
+            </footer>
+          </div>
+    </body>
 </html>
